@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+}
+
+.square {
+    display: flex;
+    border-style: solid;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.pit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 90%;
+    width: 90%;
+    border-radius: 20%;
+    color: white;
+    font-size: large;    
+}
+
+
+.grid-container {
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.wumpus {
+    background-image: url('image/wumpus.gif');
+    background-size: cover;
+}
+
+.agent {
+    background-image: url('image/agent.gif');
+    background-size: cover;
+}
+
+.breeze, .stench, .gold {
+    height: 30%;
+    width: 90%;
+}
+
